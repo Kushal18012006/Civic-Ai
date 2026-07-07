@@ -1,61 +1,395 @@
-# CivicAI — Future of Digital Governance
+# 🏛️ CivicAI – AI-Powered Digital Governance Platform
 
-An award-winning, production-ready Generative AI civic companion built to simplify government services access. CivicAI bridges the gap between complex legal documents, eligibility requirements, and daily citizen needs.
-
----
-
-## 🌟 Core Features
-
-- **AI Citizen Assistant**: ChatGPT-like assistant powered by Gemini API, capable of answering citizen questions in multiple languages, listing required documents, and translating policy terms.
-- **Government Services Explorer**: Searchable catalog of licenses, passports, water connections, and caste certificates with step-by-step guides and an **AI Simplify** drawer.
-- **Smart Recommendation Engine**: Evaluates a citizen's profile (age, occupation, income, location, education) and computes matching subsidies or scholarships with tailored AI reasoning.
-- **AI Document Assistant**: Simulates document file auditing, checking utility bills or IDs for expirations, formatting, and profile name mismatches.
-- **Civic Issue Reporter**: Visual map coordinate pin placement, photo snap simulation, and AI routing to automatically write descriptions and route tasks to municipal departments (PWD, Sanitation, Water Board, etc.).
-- **Interactive Timeline Tracker**: Monitor complaint lifecycles from filing to resolution with a simulator button to advance resolution stages during demonstrations.
+> A production-ready Generative AI platform that simplifies access to government services, helps citizens report civic issues, and provides personalized assistance through an intelligent AI companion.
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Problem Statement
 
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4 (Glassmorphic dark design tokens)
-- **AI Model**: Google Gemini API (`gemini-1.5-flash`)
-- **Authentication**: Supabase Auth (with a persistent LocalStorage simulation driver)
-- **Animations**: Framer Motion
-- **Icons**: Lucide Icons
+Build a GenAI-powered civic platform that helps citizens access government services, report public issues, and receive personalized assistance through an intelligent AI companion.
+
+The solution should:
+
+- Simplify complex government information using Generative AI
+- Answer citizen queries in natural language
+- Recommend relevant government schemes and services
+- Assist users with document requirements
+- Enable complaint registration and tracking
+- Provide multilingual support
+- Promote transparency, accessibility, and digital inclusion
 
 ---
 
-## ⚡ Quick Start
+# 🚀 Our Solution
 
-### 1. Install Dependencies
+**CivicAI** is an intelligent citizen companion designed to make everyday interactions with government services faster, simpler, and more accessible.
+
+Instead of searching through multiple government websites and lengthy documents, users can simply ask CivicAI questions in natural language. The platform explains policies, recommends eligible schemes, guides users through required documentation, and enables seamless civic issue reporting using AI.
+
+---
+
+# ✨ Key Features
+
+## 🤖 AI Citizen Assistant
+
+- Chat-based government assistance powered by Google Gemini
+- Explains government policies in simple language
+- Answers citizen queries instantly
+- Recommends relevant government services
+- Provides multilingual responses
+- Maintains conversational context
+
+---
+
+## 🏛 Government Services Explorer
+
+Browse government services including:
+
+- Aadhaar Services
+- PAN Card
+- Passport
+- Driving Licence
+- Income Certificate
+- Caste Certificate
+- Water Connection
+- Electricity Services
+- Government Welfare Schemes
+
+Each service includes:
+
+- Eligibility
+- Required Documents
+- Processing Time
+- Step-by-Step Guide
+- AI Simplification
+- Frequently Asked Questions
+
+---
+
+## 🎯 Personalized Scheme Recommendation
+
+Based on:
+
+- Age
+- Occupation
+- Income
+- Education
+- Location
+
+CivicAI intelligently recommends:
+
+- Scholarships
+- Subsidies
+- Government Schemes
+- Financial Assistance Programs
+
+along with AI-generated reasoning.
+
+---
+
+## 📄 AI Document Assistant
+
+Helps citizens by:
+
+- Verifying uploaded documents
+- Checking document completeness
+- Detecting missing requirements
+- Identifying expired documents
+- Explaining why each document is required
+
+---
+
+## 🚧 Smart Civic Issue Reporting
+
+Users can report issues such as:
+
+- Potholes
+- Garbage Collection
+- Water Leakage
+- Street Light Failure
+- Drainage Problems
+- Public Cleanliness
+
+Features include:
+
+- Interactive location selection
+- Photo upload simulation
+- AI-generated complaint description
+- Automatic department routing
+- Complaint submission
+
+---
+
+## 📊 Complaint Tracking Dashboard
+
+Track complaints through every stage:
+
+- Submitted
+- Under Review
+- Assigned
+- In Progress
+- Resolved
+
+Includes:
+
+- Timeline View
+- Department Assignment
+- Resolution Progress
+- Status Updates
+
+---
+
+## 🌐 Multilingual Support
+
+Supports multilingual AI conversations to improve accessibility and digital inclusion.
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technology |
+|-----------|------------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| UI Components | shadcn/ui |
+| AI | Google Gemini API |
+| Authentication | Supabase Auth |
+| Database | Supabase |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| Deployment | Vercel |
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+components/
+hooks/
+lib/
+services/
+types/
+utils/
+public/
+styles/
+
+README.md
+package.json
+.env.example
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/civicai.git
+```
+
+Move into the project
+
+```bash
+cd civicai
+```
+
+Install dependencies
+
 ```bash
 npm install
 ```
 
-### 2. Configure Environment (Optional)
-Copy `.env.example` to `.env.local`:
+Create environment variables
+
 ```bash
 cp .env.example .env.local
 ```
-Add your `GEMINI_API_KEY` to connect to real-time generative capabilities. If left blank, CivicAI will run in **High-Fidelity AI Simulator Mode** automatically!
 
-### 3. Run Development Server
+Add your Gemini API Key
+
+```env
+GEMINI_API_KEY=your_api_key_here
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_key
+```
+
+Run locally
+
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+Visit
+
+```
+http://localhost:3000
+```
 
 ---
 
-## ⏱️ 3-Minute Hackathon Demo Script
+# 🌍 Live Demo
 
-For hackathon judges, showcase the following continuous flow:
+**Vercel**
 
-1. **Seamless Auth**: Go to the login screen and click **"Autofill Demo Credentials"** to log in instantly.
-2. **Dashboard**: Highlight the personalized widgets, custom AI suggestions, and recent activity log.
-3. **Scheme Matching**: Go to the **Scheme Matcher**, change the monthly income or change occupation to "Student", and click **"Recalculate Matches"** to show the percentages and AI match reasons update in real-time.
-4. **AI Policy Simplifier**: Navigate to the **Service Explorer**, click "Fresh Passport Application", and tap **"Simplify Terms with AI"** to see legal requirements converted into plain language.
-5. **Interactive Issue Reporting**: Navigate to **Report Issue**, click on the grid map to place coordinates, write a description (e.g. *"huge water leak on main crossing"*), and click **"Auto-Generate Complaint using AI"** to see automatic department routing and safety guidelines.
-6. **Timeline Tracking**: Submit the complaint, click the reported ticket on the **Complaint Tracker**, and click **"Advance Stage (Demo Simulator)"** to step the complaint from "Submitted" to "Resolved" in seconds.
+> https://your-vercel-link.vercel.app
+
+---
+
+# 💻 GitHub Repository
+
+https://github.com/Kushal18012006/Civic-Ai.git
+
+---
+
+# 🎬 3-Minute Demo Flow
+
+### 1️⃣ Login
+
+Use the Demo Login to access the dashboard instantly.
+
+---
+
+### 2️⃣ AI Assistant
+
+Ask questions like:
+
+> "I'm a student from Uttar Pradesh. Which scholarships am I eligible for?"
+
+Watch Gemini generate a personalized response.
+
+---
+
+### 3️⃣ Scheme Recommendation
+
+Update income, occupation, or education and observe AI-powered recommendations update dynamically.
+
+---
+
+### 4️⃣ Government Service Explorer
+
+Open a service such as Passport or Income Certificate.
+
+Click **"Simplify with AI"** to convert complex government terminology into easy-to-understand language.
+
+---
+
+### 5️⃣ Report Civic Issue
+
+Select a location.
+
+Describe the issue.
+
+Click
+
+> **Auto Generate Complaint using AI**
+
+Watch CivicAI:
+
+- Generate a professional complaint
+- Classify the issue
+- Route it to the correct department
+
+---
+
+### 6️⃣ Complaint Tracker
+
+Advance the complaint through different stages to demonstrate the complete lifecycle.
+
+---
+
+# 🤖 AI Capabilities
+
+Google Gemini powers:
+
+- Natural Language Conversations
+- Government Policy Simplification
+- Personalized Scheme Recommendations
+- Complaint Draft Generation
+- Document Guidance
+- Multilingual Assistance
+
+---
+
+# ♿ Accessibility
+
+Designed following accessibility best practices:
+
+- Responsive Layout
+- Keyboard Navigation
+- High Contrast UI
+- Large Touch Targets
+- WCAG-friendly Components
+
+---
+
+# 🔒 Security
+
+- Secure Authentication
+- Environment Variables
+- Protected Routes
+- Input Validation
+- Safe API Integration
+
+---
+
+# 📈 Future Improvements
+
+- OCR for real government documents
+- Voice Assistant
+- Speech-to-Text
+- Real Government API Integration
+- Push Notifications
+- Aadhaar-based Authentication
+- Real Complaint Tracking
+- AI-powered Document Verification
+
+---
+
+# 📸 Screenshots
+
+Add screenshots here before submission.
+
+Example:
+
+```
+screenshots/
+
+dashboard.png
+<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/c92e1239-5295-4704-a371-cce34fadf070" />
+
+
+assistant.png
+<img width="525" height="873" alt="image" src="https://github.com/user-attachments/assets/d115a5da-1f10-4ac1-ad8d-bccc0f0cac11" />
+
+
+report-issue.png
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/a5a6ab26-f638-43fe-b71c-b4ce5700653f" />
+
+
+tracker.png
+<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/9f4ac594-860f-42dc-81f6-f76474ff30c7" />
+
+```
+
+---
+
+# 👨‍💻 Developed For
+
+**PromptWar Hackathon**
+
+Theme:
+
+> **GenAI for Digital Governance**
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+## ⭐ If you like this project, consider giving it a star!
