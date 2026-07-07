@@ -1,6 +1,9 @@
 # 🏛️ CivicAI – AI-Powered Digital Governance Platform
 
 > A production-ready Generative AI platform that simplifies access to government services, helps citizens report civic issues, and provides personalized assistance through an intelligent AI companion.
+>
+> <img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/d564fae5-d06e-4def-8718-481a61720720" />
+
 
 ---
 
