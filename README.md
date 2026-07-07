@@ -165,6 +165,43 @@ Supports multilingual AI conversations to improve accessibility and digital incl
 
 ---
 
+# 🧩 System Architecture
+
+```text
+                  +----------------------+
+                  |      Citizen         |
+                  +----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  |   CivicAI Frontend   |
+                  |  (Next.js + React)   |
+                  +----------+-----------+
+                             |
+        +--------------------+--------------------+
+        |                                         |
+        v                                         v
++----------------------+              +----------------------+
+|  Google Gemini API   |              |      Supabase        |
+|  AI Assistant        |              | Auth + Database      |
++----------------------+              +----------------------+
+        |                                         |
+        +--------------------+--------------------+
+                             |
+                             v
+                  +----------------------+
+                  | Government Services  |
+                  | Complaint System     |
+                  | Scheme Matching      |
+                  | Document Guidance    |
+                  +----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  | Citizen Dashboard    |
+                  +----------------------+
+```
+
 # 📂 Project Structure
 
 ```
@@ -219,7 +256,7 @@ SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_key
 ```
 
-Run locally
+Start Development Server
 
 ```bash
 npm run dev
@@ -235,15 +272,13 @@ http://localhost:3000
 
 # 🌍 Live Demo
 
-**Vercel**
-
 > https://civic-ai-rouge.vercel.app/
 
 ---
 
 # 💻 GitHub Repository
 
-https://github.com/Kushal18012006/Civic-Ai.git
+https://github.com/Kushal18012006/Civic-Ai
 
 ---
 
@@ -303,9 +338,8 @@ Advance the complaint through different stages to demonstrate the complete lifec
 
 ---
 
-# 🤖 AI Capabilities
 
-Google Gemini powers:
+# 🧠 How Generative AI is Used
 
 - Natural Language Conversations
 - Government Policy Simplification
@@ -315,6 +349,62 @@ Google Gemini powers:
 - Multilingual Assistance
 
 ---
+
+# 📝 Prompt Workflow / Strategy
+
+The project was developed using a structured prompting approach in Antigravity to ensure high-quality code generation, clean architecture, and production-ready deployment.
+
+### Step 1: Problem Analysis
+- Analyzed the hackathon problem statement.
+- Identified target users, pain points, and key requirements.
+- Defined the MVP features and user journey.
+
+### Step 2: Product Planning
+- Designed the application architecture.
+- Planned the database schema and authentication flow.
+- Selected the technology stack (Next.js, Supabase, Gemini API, Tailwind CSS).
+
+### Step 3: AI-Assisted Application Generation
+- Used Antigravity to generate the initial full-stack application.
+- Focused on modular architecture, reusable components, and responsive design.
+
+### Step 4: Iterative Refinement
+- Improved the UI/UX.
+- Localized the platform for Indian government services.
+- Refined AI prompts for better citizen assistance and recommendations.
+- Enhanced responsiveness and accessibility.
+
+### Step 5: Deployment & Validation
+- Tested the application locally.
+- Deployed on Vercel.
+- Published the source code on GitHub.
+- Verified the production build and overall functionality.
+
+## 🔄 Prompt Workflow Diagram
+
+```text
+           Problem Statement
+                   │
+                   ▼
+         Requirement Analysis
+                   │
+                   ▼
+         Prompt Engineering
+                   │
+                   ▼
+     Antigravity Code Generation
+                   │
+                   ▼
+         Manual Refinement
+      (UI, Localization, README)
+                   │
+                   ▼
+       Testing & Deployment
+                   │
+                   ▼
+          GitHub + Vercel
+```
+
 
 # ♿ Accessibility
 
@@ -379,11 +469,11 @@ Designed following accessibility best practices:
 
 # 👨‍💻 Developed For
 
-**PromptWar Hackathon**
+**PromptWar Hackathon 2026**
 
-Theme:
+### Theme
 
-> **GenAI for Digital Governance**
+> GenAI for Digital Governance
 
 ---
 
