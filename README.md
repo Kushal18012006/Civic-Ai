@@ -350,11 +350,6 @@ Designed following accessibility best practices:
 
 # 📸 Screenshots
 
-Add screenshots here before submission.
-
-Example:
-
-# 📸 Screenshots
 
 ## 🏠 Dashboard
 
