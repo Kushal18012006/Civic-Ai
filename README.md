@@ -234,7 +234,7 @@ http://localhost:3000
 
 **Vercel**
 
-> https://your-vercel-link.vercel.app
+> https://civic-ai-rouge.vercel.app/
 
 ---
 
