@@ -354,26 +354,29 @@ Add screenshots here before submission.
 
 Example:
 
-```
-screenshots/
+# 📸 Screenshots
 
-dashboard.png
-<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/c92e1239-5295-4704-a371-cce34fadf070" />
+## 🏠 Dashboard
 
+<img width="1917" alt="Dashboard" src="https://github.com/user-attachments/assets/c92e1239-5295-4704-a371-cce34fadf070" />
 
-assistant.png
-<img width="525" height="873" alt="image" src="https://github.com/user-attachments/assets/d115a5da-1f10-4ac1-ad8d-bccc0f0cac11" />
+---
 
+## 🤖 AI Assistant
 
-report-issue.png
-<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/a5a6ab26-f638-43fe-b71c-b4ce5700653f" />
+<img width="525" alt="AI Assistant" src="https://github.com/user-attachments/assets/d115a5da-1f10-4ac1-ad8d-bccc0f0cac11" />
 
+---
 
-tracker.png
-<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/9f4ac594-860f-42dc-81f6-f76474ff30c7" />
+## 🚧 Report Civic Issue
 
-```
+<img width="1917" alt="Report Civic Issue" src="https://github.com/user-attachments/assets/a5a6ab26-f638-43fe-b71c-b4ce5700653f" />
 
+---
+
+## 📊 Complaint Tracker
+
+<img width="1917" alt="Complaint Tracker" src="https://github.com/user-attachments/assets/9f4ac594-860f-42dc-81f6-f76474ff30c7" />
 ---
 
 # 👨‍💻 Developed For
