@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Navbar } from '../../components/navbar';
 import { Sidebar } from '../../components/sidebar';
 import { CitizenAssistant } from '../../components/ai/citizen-assistant';
@@ -33,13 +33,15 @@ export default function ServicesExplorerPage() {
   ];
 
   // Filtering logic
-  const filteredServices = mockServices.filter(service => {
-    const matchesSearch = service.title.toLowerCase().includes(search.toLowerCase()) || 
-                          service.description.toLowerCase().includes(search.toLowerCase()) ||
-                          service.department.toLowerCase().includes(search.toLowerCase());
-    const matchesCategory = selectedCategory === 'all' || service.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
+  const filteredServices = useMemo(() => {
+    return mockServices.filter(service => {
+      const matchesSearch = service.title.toLowerCase().includes(search.toLowerCase()) || 
+                            service.description.toLowerCase().includes(search.toLowerCase()) ||
+                            service.department.toLowerCase().includes(search.toLowerCase());
+      const matchesCategory = selectedCategory === 'all' || service.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [search, selectedCategory]);
 
   const handleSimplifyPolicy = async (service: GovernmentService) => {
     setIsSimplifying(true);
